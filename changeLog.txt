@@ -51,13 +51,16 @@ attached!)
 the parent element (.row-cols-1) establishes a "one-column" layout. Without this class being added padding @ x axis was being applied @ all screens which was causing the image background color to should through on the left and right sides of the image.
 
 
-***REPOSITORY + SITE DETAILS****
-repo name: github.com/colinrodney/frontend-mentor
-site name: https://colinrodney.github.io/frontend-mentor/
+
 
 re: border-radius - added 10px border radius in three places for the desired effect:
 
   1. @ info-card row border-radius although being set to apply to all sides was only being applied to the left side of the info card which would have resulted in one side of the card having border radius applied and the other side of the card not having any at all.
 
   I commented bot the image and its containing div (the color overlay div) and discovered that border-radius was indeed being applied to all four corners of the info-card div, but when re-introducing the image and its container the border-radius effect disappeared again. I resolved that issue by applying border-radius: 10px to the info-card, to the image itself, and to the image container. We can now see the border-radius effect at all four sides of the info card. I'm thinking maybe if I make the hero image back as a background image via CSS I may not have to use such a "hackish" method of achiving the desired effect. (Make this a question for the forum!!)
+
+
+***REPOSITORY + SITE DETAILS****
+repo name: github.com/colinrodney/frontend-mentor-stats-card
+site name: https://colinrodney.github.io/frontend-mentor-stats-card/
 
