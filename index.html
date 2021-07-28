@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <!-- CSS
+    1. Bootstrap
+    2. Custom Stylesheet 
+    -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <!-- END CSS /links -->
+
+    <title>Stats preview card component</title>
+  </head>
+
+  <body>
+    <!-- body = black background -->
+    <div class="container text-center">
+      <div class="info-card row row-cols-1 row-cols-md-2">
+        <div class="col image-overlay mb-3 mb-md-0 order-0 order-md-1 px-0">
+          <img
+            id="header-img"
+            srcset="images/image-header-mobile.jpg 654w,
+            images/image-header-desktop.jpg 654w"
+            src="images/image-header-mobile.jpg"
+            alt="headerImage"
+          />
+        </div>
+        <!-- END: Image Column -->
+        <div id="header-and-stats" class="d-flex flex-column justify-content-center my-4">
+          <div class="header">
+            <p class="lead mb-3 mb-md-4">
+              Get <span>insights</span> that help your business grow.
+            </p>
+            <p>
+              Discover the benefits of data analytics and make better decisions
+              regarding revenue, customer experience, and overall efficiency.
+            </p>
+          </div>
+          <!-- END: HEADER -->
+          <div class="stats mt-5 mt-md-1">
+            <ul class="d-md-flex px-0">
+              <li>10k+
+                <p class="mt-1">companies</p>
+              </li>
+              <li>
+                314
+                <p class="mt-1">templates</p>
+              </li>
+              <li>
+                12M+
+                <p class="mt-1">queries</p>
+              </li>
+            </ul>
+          </div>
+          <!-- END: STATS -->
+        </div>
+        <!-- END: HEADER-AND-STATS -->
+        </div>
+      </div>
+      <!-- END ROW -1 -->
+    </div>
+    <!-- END: CONTAINER -->
+
+    <div class="attribution text-center mt-3 py-3">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+       >.Coded by <a href="#">C.Renauld Rodney</a>.
+    </div>
+  </body>
+</html>

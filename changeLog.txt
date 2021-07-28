@@ -1,0 +1,63 @@
+1. Removed inline styles from attribution class.
+
+2. Add Bootstrap v5.0 class + custom CSS (mk sure custom CSS is properly
+attached!)
+
+  - Used fluid container for full body background + nested a regular container as foundation for card component.
+
+3. Begin working main markup.
+  - Add mobile header image [based on screen size, the image file may need to change...???]
+  - Address this in CSS
+
+  > span element used within paragraph is to add color to the word "insights".
+
+  > Add Bootstrap flexbox classes (d-flex justify content-evenly) to properly display stats items.
+
+  @Branch: styles
+
+  > @ <ul>:
+   add "list-style-type: none" to remove bullet points from list items in unordered list.
+
+   add: "text-align: left" to shift text in <li> to left. This does not the nested <p> element within the <ul>.
+
+   adjust: d-flex justify-content-between + add px-0:
+   This forces content of <ul> to take entire width of element.
+   px-0 eliminates padding @ x axis (all sides)
+
+  > @ attribution section:
+  
+    add: margin-top (mt-3) + padding @ y axis (py-3) to allow
+    breathing room for attribution section.
+
+> @ .header: apply max-width 60 ch to allow text to mimic initial design.
+
+  @.header > .lead: apply max-width 30 ch to allow text to mimic inital design.
+    
+    - add styling / fonts + text color to paaragraph and span elements
+
+   -add classes in HTML to enable flex behaviors via bootstrap flex box to allow header and stats section to be vertically centered along hero image.
+
+> @ main container column: added Bootstrap CSS order class to change order columns appear based on screen size.
+
+> @ img:
+  - remove Bootstrap class margin-bottom (mb-3) @ 768 px and larger screens. Replaced w/ responsive class mb-md-0
+
+  - add: height: 100% + used object-fit: cover to allow image to properly resize itself based on screen size. NOTE: In this case, "object-fit" property had NO impact unless the image element had an explicitly set height of 100%
+
+>
+"adjust <ul> alignment + add srcset attribute to <img> element
+
+@ row: added .row-cols-1 alongside .row-cols-md-2 such that from 0 to 768px
+the parent element (.row-cols-1) establishes a "one-column" layout. Without this class being added padding @ x axis was being applied @ all screens which was causing the image background color to should through on the left and right sides of the image.
+
+
+***REPOSITORY + SITE DETAILS****
+repo name: github.com/colinrodney/frontend-mentor
+site name: https://colinrodney.github.io/frontend-mentor/
+
+re: border-radius - added 10px border radius in three places for the desired effect:
+
+  1. @ info-card row border-radius although being set to apply to all sides was only being applied to the left side of the info card which would have resulted in one side of the card having border radius applied and the other side of the card not having any at all.
+
+  I commented bot the image and its containing div (the color overlay div) and discovered that border-radius was indeed being applied to all four corners of the info-card div, but when re-introducing the image and its container the border-radius effect disappeared again. I resolved that issue by applying border-radius: 10px to the info-card, to the image itself, and to the image container. We can now see the border-radius effect at all four sides of the info card. I'm thinking maybe if I make the hero image back as a background image via CSS I may not have to use such a "hackish" method of achiving the desired effect. (Make this a question for the forum!!)
+
