@@ -113,6 +113,6 @@ ul p {
 
   ul li {
     /* allows for proper alignment and spacing of list items */
-    margin-right: 2rem;
+    margin-right: 1.5rem;
   }
 }
