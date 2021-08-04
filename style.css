@@ -29,6 +29,10 @@ a {
   color: hsl(277, 64%, 61%);
 }
 
+a:hover {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
 .info-card {
   background: hsl(244, 38%, 16%);
   border-radius: 10px; /*rounds corners @ info card (left-side only*/
