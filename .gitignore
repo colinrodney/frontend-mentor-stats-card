@@ -15,7 +15,7 @@
 .DS_Store
 .prettierignore
 
-changeLogt.txt
+changeLog.txt
 project-brief.txt
 README.md
-README-tmplate.md
+README-template.md
