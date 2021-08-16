@@ -86,6 +86,13 @@ ul li {
   font-family: "Inter", sans-serif;
   font-weight: 700;
 }
+/* ul statistics */
+ul .statistics {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 100%);
+}
 
 ul p {
   font-family: "Lexend Deca", sans-serif;
