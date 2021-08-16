@@ -1,0 +1,23 @@
+re: 
+- To get srcset attribute to work properly it needs to be
+used inside a <picture></picture> element 
+
+  - Learning Resources:
+
+    -https://www.w3schools.com/tags/att_source_srcset.asp
+
+re: Landmark + accessibility issues
+
+  - Ensure markup is clearly defined
+    - Error msg: "Document should have one main landmark"
+
+    -Learning Resources + How to resolve:
+
+      - https://dequeuniversity.com/rules/axe/4.2/landmark-one-main?application=axeAPI
+
+
+re: HTML Validation issues:
+
+  - Error: Bad Value Bad value images/image-header-mobile.jpg 654w, images/image-header-desktop.jpg 654w for attribute srcset on element img: Width for image images/image-header-desktop.jpg is identical to width for image images/image-header-mobile.jpg.
+
+  > I think this was trying to tell me that the width of the mobile and desktop images were identical to each other and werent needed...?
