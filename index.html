@@ -36,23 +36,26 @@
 
   <body>
     <!-- body = black background -->
-    <div class="container text-center">
+    <main role="banner" class="container text-center">
       <div class="info-card row row-cols-1 row-cols-md-2">
         <div class="col image-overlay mb-3 mb-md-0 order-0 order-md-1 px-0">
-          <img
-            id="header-img"
-            srcset="images/image-header-mobile.jpg 654w,
-            images/image-header-desktop.jpg 654w"
-            src="images/image-header-mobile.jpg"
-            alt="headerImage"
-          />
+          <picture>
+            <source media="(max-width: 767px )" srcset="images/image-header-mobile.jpg">
+            <source media="(min-width: 768px)" srcset="images/image-header-desktop.jpg"">
+            <img
+              id="header-img"
+              src="images/image-header-mobile.jpg"
+              alt="headerImage"
+            />
+          </picture>
         </div>
         <!-- END: Image Column -->
-        <div id="header-and-stats" class="d-flex flex-column justify-content-center my-4">
+        <section role="main" id="header-and-stats" class="d-flex flex-column justify-content-center my-4">
           <div class="header">
-            <p class="lead mb-3 mb-md-4">
+            <h1 class="mb-3 mb-md-4">Get <span>insights</span> that help your business grow.</h1>
+            <!-- <p class="lead mb-3 mb-md-4">
               Get <span>insights</span> that help your business grow.
-            </p>
+            </p> -->
             <p>
               Discover the benefits of data analytics and make better decisions
               regarding revenue, customer experience, and overall efficiency.
@@ -75,19 +78,19 @@
             </ul>
           </div>
           <!-- END: STATS -->
-        </div>
+        </section>
         <!-- END: HEADER-AND-STATS -->
         </div>
-      </div>
+      </main>
       <!-- END ROW -1 -->
     </div>
     <!-- END: CONTAINER -->
 
-    <div class="attribution text-center mb-5 p-3">
+    <footer role="contentinfo" class="attribution text-center mb-5 p-3">
       Challenge by 
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
        >. Coded by<a href="#"> Colin Rodney</a>.
-    </div>
+    </footer>
   </body>
 </html>
