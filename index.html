@@ -25,10 +25,16 @@
       href="./images/favicon-32x32.png"
     />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <!-- END CSS /links -->
 
     <title>Stats preview card component</title>
@@ -36,23 +42,34 @@
 
   <body>
     <!-- body = black background -->
-    <main role="banner" class="container text-center">
-      <div class="info-card row row-cols-1 row-cols-md-2">
-        <div class="col image-overlay mb-3 mb-md-0 order-0 order-md-1 px-0">
+    <main role="main" class="container text-center">
+      <section class="info-card row row-cols-1 row-cols-md-2">
+        <section class="col image-overlay mb-3 mb-md-0 order-0 order-md-1 px-0">
           <picture>
-            <source media="(max-width: 767px )" srcset="images/image-header-mobile.jpg">
-            <source media="(min-width: 768px)" srcset="images/image-header-desktop.jpg"">
+            <source
+              media="(max-width: 767px )"
+              srcset="images/image-header-mobile.jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="images/image-header-desktop.jpg"
+            />
             <img
               id="header-img"
               src="images/image-header-mobile.jpg"
               alt="headerImage"
             />
           </picture>
-        </div>
+        </section>
         <!-- END: Image Column -->
-        <section role="main" id="header-and-stats" class="d-flex flex-column justify-content-center my-4">
-          <div class="header">
-            <h1 class="mb-3 mb-md-4">Get <span>insights</span> that help your business grow.</h1>
+        <section
+          id="header-and-stats"
+          class="d-flex flex-column justify-content-center my-4"
+        >
+          <section class="header">
+            <h1 class="mb-3 mb-md-4">
+              Get <span>insights</span> that help your business grow.
+            </h1>
             <!-- <p class="lead mb-3 mb-md-4">
               Get <span>insights</span> that help your business grow.
             </p> -->
@@ -60,37 +77,37 @@
               Discover the benefits of data analytics and make better decisions
               regarding revenue, customer experience, and overall efficiency.
             </p>
-          </div>
+          </section>
           <!-- END: HEADER -->
-          <div class="stats mt-5 mt-md-1">
+          <section class="stats mt-5 mt-md-1">
             <ul class="d-md-flex px-0">
-              <li>10k+
+              <li>
+                <h4 class="mt-1">10k+</h4>
                 <p class="mt-1">companies</p>
               </li>
               <li>
-                314
+                <h4 class="mt-1">314</h4>
                 <p class="mt-1">templates</p>
               </li>
               <li>
-                12M+
+                <h4 class="mt-1">12M+</h4>
                 <p class="mt-1">queries</p>
               </li>
             </ul>
-          </div>
+          </section>
           <!-- END: STATS -->
         </section>
         <!-- END: HEADER-AND-STATS -->
-        </div>
-      </main>
-      <!-- END ROW -1 -->
-    </div>
+      </section>
+    </main>
+    <!-- END ROW -1 -->
     <!-- END: CONTAINER -->
 
-    <footer role="contentinfo" class="attribution text-center mb-5 p-3">
-      Challenge by 
+    <footer class="attribution text-center mb-5 p-3">
+      Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-       >. Coded by<a href="#"> Colin Rodney</a>.
+      >. Coded by<a href="#"> Colin Rodney</a>.
     </footer>
   </body>
 </html>
